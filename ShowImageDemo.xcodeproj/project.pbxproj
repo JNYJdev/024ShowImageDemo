@@ -15,6 +15,9 @@
 		4C9613FE1AAED7470099AFEE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C9613FD1AAED7470099AFEE /* Images.xcassets */; };
 		4C9614011AAED7470099AFEE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9613FF1AAED7470099AFEE /* LaunchScreen.xib */; };
 		4C96140D1AAED7470099AFEE /* ShowImageDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C96140C1AAED7470099AFEE /* ShowImageDemoTests.m */; };
+		4C96141A1AAEDEA30099AFEE /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9614191AAEDEA30099AFEE /* 1.png */; };
+		4C96141C1AAEDEA70099AFEE /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C96141B1AAEDEA70099AFEE /* 2.png */; };
+		4CA6F7771AAFDC6900652DE9 /* JNYJCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CA6F7681AAFD86300652DE9 /* JNYJCore.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,11 @@
 		4C9614061AAED7470099AFEE /* ShowImageDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShowImageDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C96140B1AAED7470099AFEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C96140C1AAED7470099AFEE /* ShowImageDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowImageDemoTests.m; sourceTree = "<group>"; };
+		4C9614191AAEDEA30099AFEE /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		4C96141B1AAEDEA70099AFEE /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		4CA6F7681AAFD86300652DE9 /* JNYJCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = JNYJCore.a; sourceTree = "<group>"; };
+		4CA6F76E1AAFDBE700652DE9 /* JNYJCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JNYJCore.h; sourceTree = "<group>"; };
+		4CA6F77C1AAFE22300652DE9 /* JNYJViewForImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JNYJViewForImage.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CA6F7771AAFDC6900652DE9 /* JNYJCore.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,12 +93,15 @@
 		4C9613EC1AAED7470099AFEE /* ShowImageDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4CA6F7561AAFD50A00652DE9 /* ThirdLibs */,
 				4C9613F11AAED7470099AFEE /* AppDelegate.h */,
 				4C9613F21AAED7470099AFEE /* AppDelegate.m */,
 				4C9613F41AAED7470099AFEE /* MasterViewController.h */,
 				4C9613F51AAED7470099AFEE /* MasterViewController.m */,
 				4C9613F71AAED7470099AFEE /* DetailViewController.h */,
 				4C9613F81AAED7470099AFEE /* DetailViewController.m */,
+				4C9614191AAEDEA30099AFEE /* 1.png */,
+				4C96141B1AAEDEA70099AFEE /* 2.png */,
 				4C9613FA1AAED7470099AFEE /* Main.storyboard */,
 				4C9613FD1AAED7470099AFEE /* Images.xcassets */,
 				4C9613FF1AAED7470099AFEE /* LaunchScreen.xib */,
@@ -122,6 +134,40 @@
 				4C96140B1AAED7470099AFEE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4CA6F7561AAFD50A00652DE9 /* ThirdLibs */ = {
+			isa = PBXGroup;
+			children = (
+				4CA6F75B1AAFD86300652DE9 /* JNYJCore */,
+			);
+			path = ThirdLibs;
+			sourceTree = "<group>";
+		};
+		4CA6F75B1AAFD86300652DE9 /* JNYJCore */ = {
+			isa = PBXGroup;
+			children = (
+				4CA6F76A1AAFDBE700652DE9 /* include */,
+				4CA6F7681AAFD86300652DE9 /* JNYJCore.a */,
+			);
+			path = JNYJCore;
+			sourceTree = "<group>";
+		};
+		4CA6F76A1AAFDBE700652DE9 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				4CA6F76B1AAFDBE700652DE9 /* JNYJCore */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		4CA6F76B1AAFDBE700652DE9 /* JNYJCore */ = {
+			isa = PBXGroup;
+			children = (
+				4CA6F76E1AAFDBE700652DE9 /* JNYJCore.h */,
+				4CA6F77C1AAFE22300652DE9 /* JNYJViewForImage.h */,
+			);
+			path = JNYJCore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +251,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C9613FC1AAED7470099AFEE /* Main.storyboard in Resources */,
+				4C96141A1AAEDEA30099AFEE /* 1.png in Resources */,
 				4C9614011AAED7470099AFEE /* LaunchScreen.xib in Resources */,
+				4C96141C1AAEDEA70099AFEE /* 2.png in Resources */,
 				4C9613FE1AAED7470099AFEE /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,8 +397,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ShowImageDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShowImageDemo/ThirdLibs/JNYJCore.framework",
+					"$(PROJECT_DIR)/ShowImageDemo/ThirdLibs/JNYJCore",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -359,8 +413,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = ShowImageDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ShowImageDemo/ThirdLibs/JNYJCore.framework",
+					"$(PROJECT_DIR)/ShowImageDemo/ThirdLibs/JNYJCore",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -418,6 +478,7 @@
 				4C9614121AAED7470099AFEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C9614131AAED7470099AFEE /* Build configuration list for PBXNativeTarget "ShowImageDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +487,7 @@
 				4C9614151AAED7470099AFEE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

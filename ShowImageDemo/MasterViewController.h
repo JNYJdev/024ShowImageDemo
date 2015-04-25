@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MasterViewController : UITableViewController
-
-
+@property(nonatomic, strong)UIView *viewImage;
 @end
 
